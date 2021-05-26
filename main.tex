@@ -1,3 +1,5 @@
+% !TEX program = xelatex
+
 \documentclass[]{cv-style} % Add 'print' in [] to get print-view
 \usepackage{graphicx}
 \usepackage{xeCJK}
@@ -5,14 +7,11 @@
 \begin{document}
 \header{ }{  }
 \begin{aside}
-\section{.}
-\includegraphics[width=4cm]{mathen}
+%\includegraphics[width=4cm]{mathen}
 \section{Contact}
-网易游戏(杭州)
 ~
 13581724604
 ~
-hitminxuanwang\\@gmail.com
 \section{Languages}
 C++
 Python
@@ -20,83 +19,100 @@ Python
 图形渲染OpenGL DX
 图像处理OpenCV
 \end{aside}
-\section{Career Objective}
-  \vspace{-0.2cm}
-  \hspace{0.2cm}图形图像相关工作岗位，与图形图像相关的计算机视觉方向岗位，算法相关职位。
-\section{Experience}
+
 \begin{entrylist}
 
-\entry
-  {2018.7-Now}
-  {图形学工程师}
-  {网易游戏}
-  {
-    \vspace{-5pt}
-    \leftmargini=-1cm
-    \begin{itemize}
-      \setlength{\itemsep}{3pt}
-      \item {项目经验：GPU Instancing场景;实时软阴影;水彩风格化;卡通和PBR Shader; \\点光照明;软粒子特效;全屏后处理效果; 移动端优化;其他图形需求}
-      \item {工程实现：Projective Texture; LiSPSM; Global Fog; Volumetric Fog; PBR}
-      \item {理论学习： Real Time Rendering}
-      \item {创新点：创建相机位置坐标系解决人物光照问题;Frustum分成3裁剪面固定Fov\\解决深度显示问题;}
-    \end{itemize}
-    \vspace{5pt}
-    \hspace{-1.2cm} \textbf{keywords:} \emph{Rendering}, HLSL, OpenGL, 移动端优化, C++, Python
+  \entry
+    {2021.1-Now}
+    {图形渲染算法工程师}
+    {北京智源人工智能研究院}
+    {
+      \vspace{-5pt}
+      \leftmargini=-1cm
+      \begin{itemize}
+        \setlength{\itemsep}{3pt}
+        \item {基于OptiX的实时光线追踪的系统feature开发: tranparent, emissive 等}
+        \item {GPU SDF实现和改进：构建GPU ConePillSDF来绘制复杂图形}
+        \item {HDR和ToneMapping构建}
+      \end{itemize}
+      \vspace{5pt}
+      \hspace{-1.2cm} \textbf{keywords:} \emph{RayTracing}, SDF
+    }
+  
+
+
+  \entry
+    {2018.7-2021.1}
+    {图形学工程师-渲染引擎方向}
+    {网易游戏}
+    {
+      \vspace{-5pt}
+      \leftmargini=-1cm
+      \begin{itemize}
+        \setlength{\itemsep}{3pt}
+        \item {TAA: 搭建引擎的TAA系统}
+        \item {Cluster Shading: 实现高效的Forward+管线, 低带宽, 高cache命中率}
+        \item {SAO: 实现高效的实用AO算法}
+        \item {HiZ SSR: 实现HiZ以及使用HiZ的SSR}
+        \item {性能优化: 指令优化, 数学拟合, cache和算法优化等}
+        \item {算法创新：诸如描边算法的创新改进}
+      \end{itemize}
+      \vspace{5pt}
+      \hspace{-1.2cm} \textbf{keywords:} \emph{Rendering}, HLSL, OpenGL, 移动端优化, C++, Python
+    }
+  
+  \entry
+    {2017.11-18.1}
+    {实习生}
+    {旷世科技}
+    {
+      \vspace{-5pt}
+      \leftmargini=-1cm
+      \begin{itemize}
+        \setlength{\itemsep}{3pt}
+        \item {人脸检测和ImageCaption调研}
+      \end{itemize}
+      \vspace{5pt}
+      \hspace{-1.2cm} \textbf{keywords:} \emph{Facial recognition, C++}
+    }
+  
+  \entry
+    {2017.06-07}
+    {实习生}
+    {网易游戏}
+    {
+      \vspace{-5pt}
+      \leftmargini=-1cm
+      \begin{itemize}
+        \setlength{\itemsep}{3pt}
+        \item {保守光栅展UV}
+        \item {设置图像质量衡量指标筛选质量不达标的贴图}
+      \end{itemize}
+      \vspace{5pt}
+      \hspace{-1.2cm} \textbf{keywords:} OpenGL, OpenCV, 图像处理, C++, Python
+    }
+  
+  \entry
+    {2015.09 - 2018.07}
+    {学生}
+    {清华大学}
+    {
+      \vspace{-5pt}
+      \leftmargini=-1cm
+      \begin{itemize}
+        \setlength{\itemsep}{3pt}
+        \item {实现并比较多种图像融合算法：Multi-Splines，Modified Poisson，Convolution\\ Pyramid
+        ， Multi-Band，Mean-Value Coordinates等}
+        \item {提出改进的卷积金字塔方法消除色彩渗透，生成效果更好的全景视频}
+      \end{itemize}
+      \vspace{5pt}
+      \hspace{-1.2cm} \textbf{keywords:} \textbf{全景图像, 泊松方程, 调和插值, 频域卷积}，{C++ , OpenCV}
   }
+  
+  \end{entrylist}
 
-\entry
-  {2017.11-18.1}
-  {实习生}
-  {旷世科技}
-  {
-    \vspace{-5pt}
-    \leftmargini=-1cm
-    \begin{itemize}
-      \setlength{\itemsep}{3pt}
-      \item {提取人脸特征并快速检测Haar-like特征+积分图机制+级联分类器}
-      \item {调研ImageCaption相关研究}
-    \end{itemize}
-    \vspace{5pt}
-    \hspace{-1.2cm} \textbf{keywords:} \emph{Facial recognition, C++, LSTM}
-  }
 
-\entry
-  {2017.6-7}
-  {实习生}
-  {网易游戏}
-  {
-    \vspace{-5pt}
-    \leftmargini=-1cm
-    \begin{itemize}
-      \setlength{\itemsep}{3pt}
-      \item {区别于传统计算方式，直接使用GPU生成光照贴图数据, 主要参考Unreal中的\\CPU的保守光栅, 移植到GPU端}
-      \item {设置图像质量衡量指标筛选质量不达标的贴图}
-    \end{itemize}
-    \vspace{5pt}
-    \hspace{-1.2cm} \textbf{keywords:} OpenGL, OpenCV, 图像处理, C++, Python
-  }
 
-\entry
-  {2016 - 2017}
-  {学生}
-  {清华大学}
-  {
-    \vspace{-5pt}
-    \leftmargini=-1cm
-    \begin{itemize}
-      \setlength{\itemsep}{3pt}
-      \item {改进摄影构图的论文,根据用户拍摄的图像进行合适的构图推荐}
-      \item {应用As Projective As Possible算法完成多图像对齐}
-      \item {实现并比较多种图像融合算法：Multi-Splines，Modified Poisson，Convolution\\ Pyramid
-      ， Multi-Band，Mean-Value Coordinates等}
-      \item {提出改进的卷积金字塔方法消除色彩渗透，生成效果更好的全景视频}
-    \end{itemize}
-    \vspace{5pt}
-    \hspace{-1.2cm} \textbf{keywords:} \textbf{全景图像, 泊松方程, 调和插值, 频域卷积}，{C++ , OpenCV}
-}
-
-\end{entrylist}
-\vspace{-10pt}
 \section{Education}
 \begin{entrylist}
 \vspace{-10pt}
@@ -133,5 +149,9 @@ Python
    \hspace{0.2cm}研究生期间的全景视频生成项目获得清华-腾讯联合实验室优秀项目奖\\
    \hspace{0.2cm}全景视频生成项目作为实验室项目的一部分参与了国家科技进步二等奖的申报并获奖
 \end{entrylist}
+
+
+
+%\end{aside}
 
 \end{document}
